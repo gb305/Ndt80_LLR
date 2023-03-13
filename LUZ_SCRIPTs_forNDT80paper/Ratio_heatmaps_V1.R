@@ -17,13 +17,13 @@ library(AnnotationDbi); library(Biobase) ; library(doParallel) ;library(foreach)
 library(iterators) ; library(parallel)
 
 #Set nested folder
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/MAPPING/NDT80_EFFECT/NEW_HOTSPOTTEMPLATE_V20.193/TEL1_EFFECT/sae2D_sae2Dtel1D") 
+setwd("ENTER WORKING DIRECTORY") 
 
 #TOP mutant
-s.dir="/Users/ll381/Dropbox/TESIS_DOCTORAL/MAPPING/NDT80_EFFECT/NEW_HOTSPOTTEMPLATE_V20.193/TEL1_EFFECT/sae2Dndt80D_sae2Dndt80Dtel1D/sae2Dndt80D" 
+s.dir="ENTER WORKING DIRECTORY" 
 
 #BOTTOM mutant
-c.dir="/Users/ll381/Dropbox/TESIS_DOCTORAL/MAPPING/NDT80_EFFECT/NEW_HOTSPOTTEMPLATE_V20.193/TEL1_EFFECT/sae2Dndt80D_sae2Dndt80Dtel1D/sae2Dndt80Dtel1D" 
+c.dir="ENTER WORKING DIRECTORY" 
 
 
 CCfoldHS.calc(
@@ -73,7 +73,7 @@ CCfoldHS.binpileup(log2FoldMax=2,binwidth.v=c(50),invert.col=F,fixmax=T, colhigh
 
 
 # TO PLOT REC114:
- setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/MAPPING/NDT80_EFFECT/REC114/smoothed")
+ setwd("ENTER WORKING DIRECTORY")
  CCfoldHS.binpileup(log2FoldMax=0.3,binwidth.v=c(50),invert.col=T,fixmax=T, 
                     log2foldoffset = 2.5,colhigh = "firebrick", collow = "deepskyblue4")
  
