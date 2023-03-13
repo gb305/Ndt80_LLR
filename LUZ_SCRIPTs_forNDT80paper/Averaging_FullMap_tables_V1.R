@@ -10,7 +10,7 @@ ChrSize = c(230218,813184,316620+1173+2941 ,1531933,576874,270161,1090940,562643
 ChrSize = ChrSize+1000 #add some padding in case sizes are off
 ##############################################################################################################################################
 # Set working directory to Fulmap files
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/MAPPING/REC114/sae2Dndt80D background/Spo11-D290/sae2ndt80spo11D290Atel1_Averaged")
+setwd("ENTER WORKING DIRECTORY")
 
 ###############################################################################################################################################
 # Import histogram FullMap files for each strain in working directory and tally up the total number of Million mapped reads
