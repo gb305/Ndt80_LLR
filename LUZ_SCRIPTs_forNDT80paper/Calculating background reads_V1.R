@@ -7,7 +7,7 @@
   AllElementsDUB = read.table("AllElementsDUB_H4L2_Brar_2016.08.16.txt", sep = "\t", header=TRUE) #Import datatable
 
   # Now point at the data to be processed:
-  setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/MAPPING/REC114/sae2Dndt80D background/AVERAGES")
+  setwd("ENTER WORKING DIRECTORY")
   
   ###############################################################################################################################################
   require("e1071") ; require(stringr);require(doParallel); require(plyr) #Packages to load
