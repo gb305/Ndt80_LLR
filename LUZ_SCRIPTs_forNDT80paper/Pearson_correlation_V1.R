@@ -8,7 +8,7 @@ Mreads = NULL ; DSBList = list() ; DSBListNames = NULL
 cl <- makeCluster(7) ; registerDoParallel(cl)
 #Set working directory to where the Hotspot.table files are
 
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control")
+setwd("ENTER WORKING DIRECTORY")
 files = list.files(pattern = "Hotspot.Table") ; files# import files names with "Hotapot.Table"
 DSBListNames = substr(files, 21, nchar(files) - 4) # Shorten file name by x characters from beginning and x characters form end
 DSBListNames #Check
