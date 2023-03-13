@@ -11,7 +11,7 @@ require(doParallel) ; require(plyr)
 
 ###############################################################################################################################################
 # Load required dataset files:
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES")
+setwd("ENTER WORKING DIRECTORY")
 AllElementsDUB = read.table("AllElementsDUB_H4L2_Brar_2016.08.16.txt", sep = "\t", header=TRUE) #Import datatable
 nuc=read.table("nucleoChemUnique_H4L2_2016.08.11.txt", sep = "\t", header=TRUE) #Import datatable
 rmm=read.table("RMMSubSamp_simple_H4L2_2016.08.11.txt", sep = "\t", header=TRUE) #Import datatable
@@ -23,7 +23,7 @@ CEN=c(151523.5, 238265, 114443, 449766,152045.5, 148568.5, 496979,105644.5,
       355687, 436366,440187.5, 150887.5, 268090, 628816.5, 326643, 556015) 
 
 # Now point at the data to be processed:
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control")
+setwd("ENTER WORKING DIRECTORY")
 BG = read.table("BGreads8D.txt", sep = "\t", header=TRUE) #Import hotspot datatable
 
 # Creaty empty lists
