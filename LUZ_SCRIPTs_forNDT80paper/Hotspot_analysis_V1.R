@@ -1,17 +1,17 @@
 ##############################HOTSPOT_ANALYSIS###############################
 library(data.table) ; library(e1071) ; library(GenomicFeatures) ; library(VennDiagram)
 ##############################################################################
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES")
+setwd("ENTER WORKING DIRECTORY")
 chromlengths <- read.table("yeast_chrom_sizes.txt")
 ##############################################################################
 
 #Hotspot template comparison
 
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES")
+setwd("ENTER WORKING DIRECTORY")
 Pan <- read.delim("Pan.Hotspots.IGR.SacCer3_H4L2_2016.08.10a.txt")
 Neeman <- read.delim("Neeman_template.txt")
 Neale <- read.delim("0.193V2_template_UPDATE_3473HS.txt")
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control/spo11-yf")
+setwd("ENTER WORKING DIRECTORY")
 Spo11_yf <- read.delim("0.125_Hotspot.Table.spo11_yf_NorDNA.txt")
 
 #template1  = first template (Normally Neale template); template2 = the other template to compare 
@@ -52,20 +52,20 @@ NotOVerlaped ; total ; Percentaje #Percentage of hotspot overlap
 ####### Frequency and strength of exclusive hotspots 
 #thius section finds out the frequency and strength of the exclusive hotspots present between any two templates
 #For neale template:
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control")
+setwd("ENTER WORKING DIRECTORY")
 control = read.delim("V2T_Hotspot.Table.sae2Dndt80D.txt")
 # #For neeman template
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control/NEEMAN")
+setwd("ENTER WORKING DIRECTORY")
 samp <- read.delim("Hotspot.Table.Cer3H4L2_NeemanTel1D_45566hAverage_-DC>32bp.txt") #Hotspot table
 # ##samp <- read.delim("Neeman_template.txt")  #Hotspot template
 
 #For Pan
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/TEMPLATE_ANALYISIS/PAN")
+setwd("ENTER WORKING DIRECTORY")
 samp <- read.delim("TEMPLATEPAN_Hotspot.Table.pan.txt") #Hotspot table
 #samp <- read.delim("Pan.Hotspots.IGR.SacCer3_H4L2_2016.08.10a.txt") #Hotspot template
 
 #SPO11-yf
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control/spo11-yf")
+setwd("ENTER WORKING DIRECTORY")
 samp <- read.delim("0.125_Hotspot.Table.spo11_yf_NorDNA.txt")
 
 template1.gr <- GRanges(seqnames = control$Chr, ranges = IRanges(start = control$Start, end = control$End), mcols = control[,4:18])
