@@ -2,12 +2,12 @@
 ################NormHpM normalised maps 09.08.19
 ########################################################
 #Load chromosome number and length
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES")
+setwd("ENTER WORKING DIRECTORY")
 chromlengths <- read.table("yeast_chrom_sizes.txt")
 chromlengths$kb <- round(chromlengths[,2]/1000, digits=1) # change bp to kb
 
 #Setwt to Hotspot.table file location
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control")
+setwd("ENTER WORKING DIRECTORY")
 parent.directory <- getwd()
 setwd(parent.directory); 
 
