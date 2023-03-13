@@ -9,14 +9,14 @@ options(scipen=999) #Suppresses scientific notation appearing in plots/graphs et
 
 #Load hotpot template
 #Final update template for sae2D ndt80D and sae2D ndt80D tel1D is called 0.193V2_template_UPDATE_3473HS
-setwd("/Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control")
+setwd("ENTER WORKING DIRECTORY")
 files = list.files(pattern="template");files
 template= read.table(files[2], sep = "\t", header=TRUE) # read template .txt file
 template$Length = template$End - template$Start # Define length of hotspots
 template$Midpoint = template$Start + (template$Length/2) # Define hotspots'midpoint
 
 # Now point at the data to be processed (.rds format):
-setwd("//Users/ll381/Dropbox/TESIS_DOCTORAL/R/RFILES/TEMPLATE_STUDY/CUTOOF_0.193/tel1D_control")
+setwd("ENTER WORKING DIRECTORY")
 parent.directory <- getwd()
 files2 <- list.files(pattern = ".rds"); files2
 
